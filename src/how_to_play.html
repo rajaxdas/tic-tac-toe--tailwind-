@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Play</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-violet-700 border-b-2 px-2 md:px-0">
+        <div class="container mx-auto h-14 flex items-center justify-between">
+
+            <div class="flex justify-center items-center gap-2">
+                <i data-lucide="grid-2x2-x"></i>
+                <p class="text-2xl">Tic-Tac-Toe</p>
+            </div>
+            <div class="hidden md:flex items-center justify-center gap-2">
+                <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
+                <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
+                <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
+                <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
+            </div>
+            <div class="md:hidden" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
+                <a href="index.html" class="w-full pl-2">Play Game</a>
+                <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
+                <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
+                <a href="Future.html" class="w-full pl-2">Future Ideas</a>
+                <a href="about.html" class="w-full pl-2">About</a>
+                <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="mx-2">
+        <div class="my-8 prose prose-slate mx-auto lg:prose-lg">
+
+            <h1>How To Play Tic-Tac-Toe</h1>
+            <h2>Objective<h2>
+                    <h3></h3> main goal of Tic-Tac-Toe is simple be the first player to get three of your marks (either
+                    'X'
+                    or 'O') in a straight line. This line can be horizontal, vertical, or diagonal.
+                    <h1>Gameplay</h1>
+                    <li>The game is played on a 3x3 grid.</li>
+                    <li>Player 'X' always starts first.</li>
+                    <li>Player take turns clicking on an empty square to place their mark('X' or 'O').</li>
+                    <li>You cannot place ('X' or 'O') on the boxes that is already occupied.</li>
+                    <h1>Winning the Game</h1>
+                    You win if you successfully place three of your marks in a row, column, or diagonal. When a player
+                    wins,
+                    the winning line of squares will be highlighted in green, and a status message will declare the
+                    winner.
+                    <h3>
+                        <h3>Example winning lines:</h3>
+                        <li>The row : [X] [X] [X] </li>
+                        <li>The middle column : [O] [O] [O] </li>
+                        <li>diagonals :
+                            <pre>
+    [X] [ ] [ ]
+    [ ] [X] [ ]
+    [ ] [ ] [X]
+    </pre>
+
+                        </li>
+                        <h1>Drawing the Game</h1>
+                        If all nine squares on the board are filled, and neither player has achieved three marks in a
+                        row,
+                        the game ends in a draw (also called a tie or stalemate). When this happens, all squares will be
+                        highlighted in red, and the status message will indicate "It's a Draw !".
+                        <h1>Restarting The Game</h1>
+                        After a game ends (either by a win or a draw) or even during a game if you want to start over,
+                        simply click the "Restart" button below the board. This will clear the grid and reset the game,
+                        allowing 'X' to start again.
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

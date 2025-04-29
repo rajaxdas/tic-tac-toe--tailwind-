@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologies Used</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-violet-700 border-b-2 px-2 md:px-0">
+    <div class="container mx-auto h-14 flex items-center justify-between">
+
+      <div class="flex justify-center items-center gap-2">
+        <i data-lucide="grid-2x2-x"></i>
+        <p class="text-2xl">Tic-Tac-Toe</p>
+      </div>
+      <div class="hidden md:flex items-center justify-center gap-2">
+        <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
+        <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
+        <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
+        <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
+      </div>
+      <div class="md:hidden" id="hamburger">
+        <i data-lucide="menu"></i>
+      </div>
+      <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
+        <a href="index.html" class="w-full pl-2">Play Game</a>
+        <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
+        <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
+        <a href="Future.html" class="w-full pl-2">Future Ideas</a>
+        <a href="about.html" class="w-full pl-2">About</a>
+        <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
+
+    <h1>Technologies Used</h1>
+    This project utilizes fundamental web technologies to create an interactive Tic-Tac-Toe game:</h2>
+    <ul>
+      <li>
+        <h3>HTML (HyperText Markup Language):</h3>
+        Used to structure the content of the web pages, defining elements like headings, paragraphs, lists, buttons, and
+        the containers for the game board.
+      </li>
+      <li>
+        <h3>CSS (Cascading Style Sheets):</h3>
+        Used to control the visual presentation and layout. This includes setting colors, fonts, spacing, element sizes,
+        and using Flexbox to arrange the game grid and center content. The specific styles for game states (winner,
+        draw) are also handled by CSS.
+      </li>
+      <li>
+        <h3>Java Script</h3>
+        Powers the game's logic and interactivity.
+        <h4> It Handles : </h4>
+      <li>Dynamically creating the game board elements.</li>
+      <li>Responding to user clicks (Event Handling).</li>
+      <li>Updating the game state (tracking moves).</li>
+      <li>Checking for win conditions or draws.</li>
+      <li>Resetting the game.</li>
+      <li>
+        <h3>Google Fonts :</h3>Used to import and apply the 'Roboto' font for a consistent and modern look.
+      <li>
+        <h3>Browser Developer Tools:</h3>
+        Essential tools (available in browsers like Chrome, Firefox, Edge) used for debugging JavaScript, inspecting
+        HTML elements, and testing CSS styles during development.
+      </li>
+
+    </ul>
+
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+      lucide.createIcons();
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-violet-700 border-b-2 px-2 md:px-0">
+        <div class="container mx-auto h-14 flex items-center justify-between">
+
+            <div class="flex justify-center items-center gap-2">
+                <i data-lucide="grid-2x2-x"></i>
+                <p class="text-2xl">Tic-Tac-Toe</p>
+            </div>
+            <div class="hidden md:flex items-center justify-center gap-2">
+                <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
+                <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
+                <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
+                <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
+            </div>
+            <div class="md:hidden" id="hamburger">
+                <i data-lucide="menu"></i>
+            </div>
+            <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
+                <a href="index.html" class="w-full pl-2">Play Game</a>
+                <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
+                <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
+                <a href="Future.html" class="w-full pl-2">Future Ideas</a>
+                <a href="about.html" class="w-full pl-2">About</a>
+                <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
+
+
+        <h1>About This Project</h1>
+        <h2>Project Description</h2>
+        <h2></h2>This website features a classic Tic-Tac-Toe game implemented using fundamental web technologies: HTML,
+        CSS, and JavaScript. It allows two players to compete locally on the same browser.
+
+        This project was developed as part of [Mention Course Name, e.g., "the 2nd Year Web Development Fundamentals
+        course"] for Computer Engineering students at [Mention Your Institution, Optional].
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
