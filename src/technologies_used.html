@@ -12,47 +12,68 @@
 
   <!-- Header  -->
   <div class="border-b-2 bg-linear-to-r from-cyan-500 to-blue-500 px-2 md:px-0">
-    <div class="container mx-auto flex h-14 items-center justify-between">
+    <div class="container mx-auto flex h-14 items-center justify-between md:h-20">
       <div class="flex items-center justify-center gap-2">
-        <i data-lucide="grid-2x2-x"></i>
-        <p class="text-2xl">Tic-Tac-Toe</p>
+        <i data-lucide="grid-2x2-x" class="md:size-10"></i>
+        <p class="text-2xl md:text-4xl">Tic-Tac-Toe</p>
       </div>
-      <div class="hidden items-center justify-center gap-2 md:flex">
-        <a href="index.html" class="link-style"> Play Game </a>
-        <a href="how_to_play.html" class="link-style">How to play</a>
-        <a href="Future.html" class="link-style">Future ideas</a>
-        <a href="technologies_used.html" class="link-style">Technologies</a>
+      <div class="hidden items-center justify-center gap-4 md:flex">
+        <div class="flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="gamepad-2" class="size-5"></i>
+          <a href="index.html">Play Game</a>
+        </div>
+        <div class="flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="circle-help" class="size-5"></i>
+          <a href="how_to_play.html">How to play</a>
+        </div>
+        <div class="flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="lightbulb" class="size-5"></i>
+          <a href="Future.html">Future ideas</a>
+        </div>
+        <div class="flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="boxes" class="size-5"></i>
+          <a href="technologies_used.html">Technologies</a>
+        </div>
+        <div class="md:hidden lg:flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="info" class="size-5 "></i>
+          <a href="about.html">About</a>
+        </div>
+        <div class="md:hidden lg:flex items-center justify-center gap-2 hover:text-white hover:stroke-white">
+          <i data-lucide="circle-user" class="size-5"></i>
+          <a href="contact_us.html">Contact us</a>
+        </div>
       </div>
+
       <div class="md:hidden" id="hamburger">
         <i data-lucide="menu"></i>
       </div>
+    </div>
 
-      <!-- dropdown meanu -->
-      <div id="dropdown-menu" data-current="false" class="dropdown-menu data-[current=true]:flex">
-        <div class="flex items-center justify-center px-2">
-          <a href="index.html" class="w-full py-2">Play Game</a>
-          <i data-lucide="gamepad-2"></i>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <a href="how_to_play.html" class="w-full py-2">How to Play</a>
-          <i data-lucide="circle-help"></i>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <a href="technologies_used.html" class="w-full py-2">Technologies Used</a>
-          <i data-lucide="boxes"></i>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <a href="Future.html" class="w-full py-2">Future Ideas</a>
-          <i data-lucide="lightbulb"></i>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <a href="about.html" class="w-full py-2">About</a>
-          <i data-lucide="info"></i>
-        </div>
-        <div class="flex items-center justify-center px-2">
-          <a href="contact_us.html" class="w-full py-2">Contact Us</a>
-          <i data-lucide="circle-user"></i>
-        </div>
+    <!-- dropdown meanu -->
+    <div id="dropdown-menu" data-current="false" class="dropdown-menu data-[current=true]:flex">
+      <div class="flex items-center justify-center px-2">
+        <a href="index.html" class="w-full py-2">Play Game</a>
+        <i data-lucide="gamepad-2"></i>
+      </div>
+      <div class="flex items-center justify-center px-2">
+        <a href="how_to_play.html" class="w-full py-2">How to Play</a>
+        <i data-lucide="circle-help"></i>
+      </div>
+      <div class="flex items-center justify-center px-2">
+        <a href="technologies_used.html" class="w-full py-2">Technologies Used</a>
+        <i data-lucide="boxes"></i>
+      </div>
+      <div class="flex items-center justify-center px-2">
+        <a href="Future.html" class="w-full py-2">Future Ideas</a>
+        <i data-lucide="lightbulb"></i>
+      </div>
+      <div class="flex items-center justify-center px-2">
+        <a href="about.html" class="w-full py-2">About</a>
+        <i data-lucide="info"></i>
+      </div>
+      <div class="flex items-center justify-center px-2">
+        <a href="contact_us.html" class="w-full py-2">Contact Us</a>
+        <i data-lucide="circle-user"></i>
       </div>
     </div>
   </div>
