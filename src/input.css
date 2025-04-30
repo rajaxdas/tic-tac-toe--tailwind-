@@ -1,16 +1,30 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-
-#dropdown-menu {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 10px;
-    width: 200px;
-    z-index: 99;
+@utility dropdown-menu {
+  @apply fixed top-16 right-2 z-50 hidden w-[200px] flex-col divide-y-2 divide-white rounded-2xl border-2 border-black bg-linear-to-r from-cyan-500 to-blue-500 text-white;
 }
 
-#dropdown-menu.open {
-    display: flex;
+@utility box {
+  @apply flex size-[18vmin] items-center justify-center rounded-2xl bg-gradient-to-tr from-blue-400 to-indigo-500 text-[8vmin] shadow-2xl md:size-40;
+}
+
+@utility game {
+  @apply flex size-[60vmin] flex-wrap items-center justify-center gap-[1.6vmin] md:size-150 md:gap-5;
+}
+
+.drawText {
+  color: red;
+}
+
+.winner {
+  background: oklch(62.7% 0.194 149.214);
+}
+
+#status {
+  color: oklch(62.7% 0.194 149.214);
+}
+
+.draw {
+  background: oklch(57.7% 0.245 27.325);
 }

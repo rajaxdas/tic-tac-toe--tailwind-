@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How To Play</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="output.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -56,70 +57,58 @@
         </div>
     </div>
     <!-- xxxx -->
-    <div class="mx-4">
-        <div class="prose prose-slate lg:prose-lg mx-auto my-8">
-            <h1>How to Play Tic-Tac-Toe</h1>
 
-            <h2>Objective</h2>
-            <p>
-                The goal of Tic-Tac-Toe is to be the first player to place three of
-                your marks (either <strong>'X'</strong> or <strong>'O'</strong>) in a
-                row. The row can be <strong>horizontal</strong>,
-                <strong>vertical</strong>, or <strong>diagonal</strong>.
-            </p>
+    <div class="max-w-3xl mx-auto px-4 py-10">
+        <h1 class="text-3xl font-bold mb-6 text-center">Contact Us</h1>
 
-            <h2>Gameplay</h2>
-            <p>The game is played on a <strong>3×3 grid</strong>.</p>
-            <p><strong>Player 'X'</strong> always goes first.</p>
-            <p>Players take turns placing their mark in an empty square.</p>
-            <p>A square cannot be used more than once.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block font-medium">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200">
+                </div>
 
-            <h2>Winning the Game</h2>
-            <p>You win if you get three of your marks in:</p>
-            <p><strong>A horizontal row:</strong><br />Example:
-            <pre>
-[X] [X] [X]
-[ ] [ ] [ ]
-[ ] [ ] [ ]</pre>
-            </p>
-            <p>
-                <strong>A vertical column:</strong><br />Example:<br />
-            <pre>
-[O] [ ] [ ]
-[O] [ ] [ ]
-[O] [ ] [ ]</pre>
-            </p>
-            <p><strong>A diagonal line:</strong></p>
-            <pre>
-[X] [ ] [ ]
-[ ] [X] [ ]
-[ ] [ ] [X]</pre>
-            <p>
-                When a player wins, the winning squares are highlighted (e.g., in
-                green), and a message shows who won.
-            </p>
+                <div>
+                    <label for="email" class="block font-medium">Your Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200">
+                </div>
 
-            <h2>Drawing the Game</h2>
-            <p>
-                If all nine squares are filled and no one has three in a row, the game
-                ends in a <strong>draw</strong>. The board is highlighted (e.g., in
-                red), and a message says: <strong>"It's a Draw!"</strong>
-            </p>
+                <div>
+                    <label for="message" class="block font-medium">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200"></textarea>
+                </div>
 
-            <h2>Restarting the Game</h2>
-            <p>
-                After a game ends (either by a win or a draw), or at any time, you can
-                click the <strong>"Restart"</strong> button. This clears the board and
-                starts a new game, with <strong>'X'</strong> going first again.
-            </p>
+                <button type="submit"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Send
+                    Message</button>
+            </form>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Other Contact Options</h2>
+            <p class="mb-2"><strong>Email:</strong> <a href="mailto:csegpnp@gmail.com"
+                    class="text-blue-600">csegpnp@gmail.com</a></p>
+            <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/rajaxdas" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600">github.com/rajaxdas</a></p>
+            <p class="mb-2"><strong>Shubham (WhatsApp):</strong> <a href="https://wa.me/918882531720" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600">+91 88825 31720</a></p>
+            <p class="mb-2"><strong>Satyam (WhatsApp):</strong> <a href="https://wa.me/917250925971" target="_blank"
+                    rel="noopener noreferrer" class="text-blue-600">+91 72509 25971</a></p>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons();
     </script>
     <script src="app.js"></script>
+    <script src="game.js"></script>
+    <!-- xxxx -->
+
 </body>
 
 </html>

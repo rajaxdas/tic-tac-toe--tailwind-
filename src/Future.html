@@ -1,99 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future Ideas</title>
-    <link href="output.css" rel="stylesheet">
-</head>
+    <link href="output.css" rel="stylesheet" />
+  </head>
 
-<body>
-    <div class="bg-violet-700 border-b-2 px-2 md:px-0">
-        <div class="container mx-auto h-14 flex items-center justify-between">
-
-            <div class="flex justify-center items-center gap-2">
-                <i data-lucide="grid-2x2-x"></i>
-                <p class="text-2xl">Tic-Tac-Toe</p>
-            </div>
-            <div class="hidden md:flex items-center justify-center gap-2">
-                <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
-                <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
-                <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
-                <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
-            </div>
-            <div class="md:hidden" id="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-            <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
-                <a href="index.html" class="w-full pl-2">Play Game</a>
-                <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
-                <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
-                <a href="Future.html" class="w-full pl-2">Future Ideas</a>
-                <a href="about.html" class="w-full pl-2">About</a>
-                <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
-            </div>
+  <body>
+    <!-- Header  -->
+    <div
+      class="border-b-2 bg-linear-to-r from-cyan-500 to-blue-500 px-2 md:px-0"
+    >
+      <div class="container mx-auto flex h-14 items-center justify-between">
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="grid-2x2-x"></i>
+          <p class="text-2xl">Tic-Tac-Toe</p>
         </div>
+        <div class="hidden items-center justify-center gap-2 md:flex">
+          <a href="index.html" class="link-style"> Play Game </a>
+          <a href="how_to_play.html" class="link-style">How to play</a>
+          <a href="Future.html" class="link-style">Future ideas</a>
+          <a href="technologies_used.html" class="link-style">Technologies</a>
+        </div>
+        <div class="md:hidden" id="hamburger">
+          <i data-lucide="menu"></i>
+        </div>
+
+        <!-- dropdown meanu -->
+        <div
+          id="dropdown-menu"
+          data-current="false"
+          class="dropdown-menu data-[current=true]:flex"
+        >
+          <div class="flex items-center justify-center px-2">
+            <a href="index.html" class="w-full py-2">Play Game</a>
+            <i data-lucide="gamepad-2"></i>
+          </div>
+          <div class="flex items-center justify-center px-2">
+            <a href="how_to_play.html" class="w-full py-2">How to Play</a>
+            <i data-lucide="circle-help"></i>
+          </div>
+          <div class="flex items-center justify-center px-2">
+            <a href="technologies_used.html" class="w-full py-2"
+              >Technologies Used</a
+            >
+            <i data-lucide="boxes"></i>
+          </div>
+          <div class="flex items-center justify-center px-2">
+            <a href="Future.html" class="w-full py-2">Future Ideas</a>
+            <i data-lucide="lightbulb"></i>
+          </div>
+          <div class="flex items-center justify-center px-2">
+            <a href="about.html" class="w-full py-2">About</a>
+            <i data-lucide="info"></i>
+          </div>
+          <div class="flex items-center justify-center px-2">
+            <a href="contact_us.html" class="w-full py-2">Contact Us</a>
+            <i data-lucide="circle-user"></i>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
+    <!-- xxxx -->
+    <div class="mx-4">
+      <div class="prose prose-slate lg:prose-lg m-8 mx-auto">
         <h1>Future Enhancements</h1>
-        While this project provides a functional Tic-Tac-Toe game, there are many potential improvements and features
-        that
-        could be added in the future:
-        <h3>
-            <li>AI Opponent :<h3>
-            </li>
-            <h2></h2> Implement a computer player or bot. This could range from simple (making random valid moves) to
-            complex (using the Minimax algorithm for an unbeatable opponent).
-            <h3>
-                <li>Difficulty Levels :<h3>
-                </li>
-                <h2></h2>If an AI or bot is added , allow the users to select different difficulty levels. like(Easy,
-                Meadium, Hard).
-                <h3>
-                    <li>Score Keeping :
-                </h3>
-                </li>
-                Track the numbers of wins for 'X' or 'O' and the number of draws across multiple games within a session
-                (using JavaScript variable ) or even across sessions (usings browser Local Storage).
-                <h3>
-                    <li> Player Names :<h3>
-                    </li>
-                    <h2></h2> To input their name instead of using 'X' or 'O'.
-                    <h3>
-                        <li> Sound Effects :<h3>
-                        </li>
-                        <h2></h2> Simple audio feedback for placing a mark, winning the game, or a draw.
-                        <h3>
-                            <li>Improved Visuals & Themes :<h3>
-                            </Li>
-                            <h2></h2> The user interface with better graphics, animations, or allow users to select
-                            different visual themes (e.g., dark mode, different color schemes).
-                        </h3>
-                        </li>
-                        <h3>
-                            <li>Multiplayer Mode :
-                        </h3>
-                        <h2></h2> More advanced feature would be to allow two players to play against each other over a
-                        network (requires server-side logic and technologies like WebSockets).</h2>
-                        </li>
-                        <h3>
-                            <li>Turn Indicator :
-                        </h3>
-                        <h2></h2> Indicate whose turn it is currently, perhaps by updating the status text after each
-                        move
-                        or highlighting the current player's symbol.</h2>
-                        </li>
+        <p>
+          While this project provides a functional Tic-Tac-Toe game, there are
+          many potential improvements and features that could be added in the
+          future:
+        </p>
 
+        <h3>AI Opponent</h3>
+        <p>
+          Implement a computer player or bot. This could range from simple
+          (making random valid moves) to complex (using the Minimax algorithm
+          for an unbeatable opponent).
+        </p>
+
+        <h3>Difficulty Levels</h3>
+        <p>
+          If an AI or bot is added, allow users to select different difficulty
+          levels (e.g., Easy, Medium, Hard).
+        </p>
+
+        <h3>Score Keeping</h3>
+        <p>
+          Track the number of wins for 'X' or 'O' and the number of draws across
+          multiple games within a session (using a JavaScript variable) or even
+          across sessions (using browser Local Storage).
+        </p>
+
+        <h3>Player Names</h3>
+        <p>Allow users to input their names instead of using 'X' or 'O'.</p>
+
+        <h3>Sound Effects</h3>
+        <p>
+          Simple audio feedback for placing a mark, winning the game, or a draw.
+        </p>
+
+        <h3>Improved Visuals & Themes</h3>
+        <p>
+          Enhance the user interface with better graphics and animations, or
+          allow users to select different visual themes (e.g., dark mode,
+          different color schemes).
+        </p>
+
+        <h3>Multiplayer Mode</h3>
+        <p>
+          A more advanced feature would allow two players to play against each
+          other over a network (requires server-side logic and technologies like
+          WebSockets).
+        </p>
+
+        <h3>Turn Indicator</h3>
+        <p>
+          Indicate whose turn it is currently, perhaps by updating the status
+          text after each move or highlighting the current player's symbol.
+        </p>
+      </div>
     </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
+      lucide.createIcons();
     </script>
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>

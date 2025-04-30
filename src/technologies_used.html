@@ -10,73 +10,102 @@
 
 <body>
 
-  <div class="bg-violet-700 border-b-2 px-2 md:px-0">
-    <div class="container mx-auto h-14 flex items-center justify-between">
-
-      <div class="flex justify-center items-center gap-2">
+  <!-- Header  -->
+  <div class="border-b-2 bg-linear-to-r from-cyan-500 to-blue-500 px-2 md:px-0">
+    <div class="container mx-auto flex h-14 items-center justify-between">
+      <div class="flex items-center justify-center gap-2">
         <i data-lucide="grid-2x2-x"></i>
         <p class="text-2xl">Tic-Tac-Toe</p>
       </div>
-      <div class="hidden md:flex items-center justify-center gap-2">
-        <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
-        <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
-        <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
-        <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
+      <div class="hidden items-center justify-center gap-2 md:flex">
+        <a href="index.html" class="link-style"> Play Game </a>
+        <a href="how_to_play.html" class="link-style">How to play</a>
+        <a href="Future.html" class="link-style">Future ideas</a>
+        <a href="technologies_used.html" class="link-style">Technologies</a>
       </div>
       <div class="md:hidden" id="hamburger">
         <i data-lucide="menu"></i>
       </div>
-      <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
-        <a href="index.html" class="w-full pl-2">Play Game</a>
-        <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
-        <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
-        <a href="Future.html" class="w-full pl-2">Future Ideas</a>
-        <a href="about.html" class="w-full pl-2">About</a>
-        <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
+
+      <!-- dropdown meanu -->
+      <div id="dropdown-menu" data-current="false" class="dropdown-menu data-[current=true]:flex">
+        <div class="flex items-center justify-center px-2">
+          <a href="index.html" class="w-full py-2">Play Game</a>
+          <i data-lucide="gamepad-2"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="how_to_play.html" class="w-full py-2">How to Play</a>
+          <i data-lucide="circle-help"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="technologies_used.html" class="w-full py-2">Technologies Used</a>
+          <i data-lucide="boxes"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="Future.html" class="w-full py-2">Future Ideas</a>
+          <i data-lucide="lightbulb"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="about.html" class="w-full py-2">About</a>
+          <i data-lucide="info"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="contact_us.html" class="w-full py-2">Contact Us</a>
+          <i data-lucide="circle-user"></i>
+        </div>
       </div>
     </div>
   </div>
+  <!-- xxxx -->
+  <div class="mx-4">
+    <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
 
-  <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
+      <h1>Technologies Used</h1>
+      <p>Our Tic-Tac-Toe game is built using modern web technologies to ensure an interactive, responsive, and clean
+        user experience.</p>
 
-    <h1>Technologies Used</h1>
-    This project utilizes fundamental web technologies to create an interactive Tic-Tac-Toe game:</h2>
-    <ul>
-      <li>
-        <h3>HTML (HyperText Markup Language):</h3>
-        Used to structure the content of the web pages, defining elements like headings, paragraphs, lists, buttons, and
-        the containers for the game board.
-      </li>
-      <li>
-        <h3>CSS (Cascading Style Sheets):</h3>
-        Used to control the visual presentation and layout. This includes setting colors, fonts, spacing, element sizes,
-        and using Flexbox to arrange the game grid and center content. The specific styles for game states (winner,
-        draw) are also handled by CSS.
-      </li>
-      <li>
-        <h3>Java Script</h3>
-        Powers the game's logic and interactivity.
-        <h4> It Handles : </h4>
-      <li>Dynamically creating the game board elements.</li>
-      <li>Responding to user clicks (Event Handling).</li>
-      <li>Updating the game state (tracking moves).</li>
-      <li>Checking for win conditions or draws.</li>
-      <li>Resetting the game.</li>
-      <li>
-        <h3>Google Fonts :</h3>Used to import and apply the 'Roboto' font for a consistent and modern look.
-      <li>
-        <h3>Browser Developer Tools:</h3>
-        Essential tools (available in browsers like Chrome, Firefox, Edge) used for debugging JavaScript, inspecting
-        HTML elements, and testing CSS styles during development.
-      </li>
+      <h3>HTML (HyperText Markup Language)</h3>
+      <p>HTML forms the backbone of the application, providing the semantic structure for all the elements such as the
+        game board, buttons, and headings.</p>
 
-    </ul>
+      <h3>Tailwind CSS</h3>
+      <p>Tailwind CSS is used for styling the interface with utility-first classes. It allows for rapid design of
+        layouts, responsive elements, spacing, typography, and visual feedback for game states like wins or draws.</p>
 
+      <h3>JavaScript</h3>
+      <p>JavaScript handles the core game logic and user interaction. It listens to click events, updates the board
+        dynamically, manages turn-based play, checks for winners or ties, and resets the game when needed.</p>
+
+      <h3>Google Fonts</h3>
+      <p>The 'Roboto' font is imported via Google Fonts to give the game a clean and modern appearance across all
+        devices.</p>
+
+      <h3>Browser Developer Tools</h3>
+      <p>Developer tools in browsers such as Chrome or Firefox are used to debug the JavaScript code, inspect DOM
+        elements, and fine-tune the layout and styling during development.</p>
+
+      <h3>Visual Studio Code</h3>
+      <p>Visual Studio Code (VS Code) is used as the primary code editor. It provides features like syntax highlighting,
+        live server preview, and extensions that enhance development efficiency.</p>
+
+      <h3>Git & GitHub</h3>
+      <p>Git is used for version control, while GitHub hosts the project repository, enabling collaboration and code
+        sharing.</p>
+
+      <h3>Lucide Icons (Lucide React)</h3>
+      <p>Lucide React is used to display clean and modern SVG icons throughout the website. It provides a React-based
+        implementation of the Lucide icon set, making it easy to include interactive and customizable icons for UI
+        elements such as buttons, headers, and menus. These icons enhance the visual appeal and usability of the
+        application.</p>
+    </div>
   </div>
+
+
+
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-      lucide.createIcons();
+    lucide.createIcons();
   </script>
   <script src="app.js"></script>
 </body>

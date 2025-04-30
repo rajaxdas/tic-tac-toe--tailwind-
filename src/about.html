@@ -1,58 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link href="output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link href="output.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="bg-violet-700 border-b-2 px-2 md:px-0">
-        <div class="container mx-auto h-14 flex items-center justify-between">
+  <!-- Header  -->
+  <div class="border-b-2 bg-linear-to-r from-cyan-500 to-blue-500 px-2 md:px-0">
+    <div class="container mx-auto flex h-14 items-center justify-between">
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="grid-2x2-x"></i>
+        <p class="text-2xl">Tic-Tac-Toe</p>
+      </div>
+      <div class="hidden items-center justify-center gap-2 md:flex">
+        <a href="index.html" class="link-style"> Play Game </a>
+        <a href="how_to_play.html" class="link-style">How to play</a>
+        <a href="Future.html" class="link-style">Future ideas</a>
+        <a href="technologies_used.html" class="link-style">Technologies</a>
+      </div>
+      <div class="md:hidden" id="hamburger">
+        <i data-lucide="menu"></i>
+      </div>
 
-            <div class="flex justify-center items-center gap-2">
-                <i data-lucide="grid-2x2-x"></i>
-                <p class="text-2xl">Tic-Tac-Toe</p>
-            </div>
-            <div class="hidden md:flex items-center justify-center gap-2">
-                <a href="index.html" class="border rounded-xl px-2 hover:bg-violet-600">Play Game</a>
-                <a href="how_to_play.html" class="border rounded-xl px-2 hover:bg-violet-600">How to play</a>
-                <a href="Future.html" class="border rounded-xl px-2 hover:bg-violet-600">Future ideas</a>
-                <a href="technologies_used.html" class="border rounded-xl px-2 hover:bg-violet-600">Technologies</a>
-            </div>
-            <div class="md:hidden" id="hamburger">
-                <i data-lucide="menu"></i>
-            </div>
-            <div id="dropdown-menu" class="border flex-col bg-violet-700 rounded-2xl divide-y-2 w-full">
-                <a href="index.html" class="w-full pl-2">Play Game</a>
-                <a href="how_to_play.html" class="w-full pl-2">How to Play</a>
-                <a href="technologies_used.html" class="w-full pl-2">Technologies Used</a>
-                <a href="Future.html" class="w-full pl-2">Future Ideas</a>
-                <a href="about.html" class="w-full pl-2">About</a>
-                <a href="contact_us.html" class="w-full pl-2">Contact Us</a>
-            </div>
+      <!-- dropdown meanu -->
+      <div id="dropdown-menu" data-current="false" class="dropdown-menu data-[current=true]:flex">
+        <div class="flex items-center justify-center px-2">
+          <a href="index.html" class="w-full py-2">Play Game</a>
+          <i data-lucide="gamepad-2"></i>
         </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="how_to_play.html" class="w-full py-2">How to Play</a>
+          <i data-lucide="circle-help"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="technologies_used.html" class="w-full py-2">Technologies Used</a>
+          <i data-lucide="boxes"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="Future.html" class="w-full py-2">Future Ideas</a>
+          <i data-lucide="lightbulb"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="about.html" class="w-full py-2">About</a>
+          <i data-lucide="info"></i>
+        </div>
+        <div class="flex items-center justify-center px-2">
+          <a href="contact_us.html" class="w-full py-2">Contact Us</a>
+          <i data-lucide="circle-user"></i>
+        </div>
+      </div>
     </div>
-
+  </div>
+  <!-- xxxx -->
+  <div class="mx-4">
     <div class="m-8 prose prose-slate mx-auto lg:prose-lg">
+      <h1>About This Project</h1>
+      <h2>Our Team</h2>
+      <p>This project was created by a team of 5 dedicated students:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Contribution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Neeraj</td>
+            <td>Lead JavaScript logic</td>
+          </tr>
+          <tr>
+            <td>Jaydeep</td>
+            <td>Assisted with JavaScript logic</td>
+          </tr>
+          <tr>
+            <td>Raja</td>
+            <td>HTML structure</td>
+          </tr>
+          <tr>
+            <td>Shubham</td>
+            <td>CSS styling through plugin</td>
+          </tr>
+          <tr>
+            <td>Satyam</td>
+            <td>Documentation and testing</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Description</h2>
+      <p>This website features a classic Tic-Tac-Toe game implemented using fundamental web technologies: HTML, CSS, and
+        JavaScript. It allows two players to compete locally on the same browser.</p>
+      <p>This project was developed as part of a Minor Project for 2nd Year CSE students at Government Polytechnic,
+        Nanakpur.</p>
+
+      <h2>Objectives</h2>
+      <p>The development of this project aimed to practice and demonstrate understanding of several key web development
+        concepts:</p>
+      <ul>
+        <li>Structuring web content using semantic HTML5.</li>
+        <li>Styling web pages effectively with CSS3, including layout techniques like Flexbox.</li>
+        <li>Implementing interactive logic using JavaScript (ES6+).</li>
+        <li>Manipulating the Document Object Model (DOM) to dynamically update the user interface.</li>
+        <li>Handling user events (like clicks).</li>
+        <li>Basic algorithm design for game logic (win/draw detection).</li>
+        <li>Organizing the project using multiple files (HTML, CSS, JS).</li>
+      </ul>
 
 
-        <h1>About This Project</h1>
-        <h2>Project Description</h2>
-        <h2></h2>This website features a classic Tic-Tac-Toe game implemented using fundamental web technologies: HTML,
-        CSS, and JavaScript. It allows two players to compete locally on the same browser.
 
-        This project was developed as part of [Mention Course Name, e.g., "the 2nd Year Web Development Fundamentals
-        course"] for Computer Engineering students at [Mention Your Institution, Optional].
+      <p>We hope you enjoy playing our version of Tic-Tac-Toe!</p>
     </div>
+  </div>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-    <script src="app.js"></script>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="app.js"></script>
 </body>
 
 </html>
