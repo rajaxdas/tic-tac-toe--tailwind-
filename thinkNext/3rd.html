@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --background: #081c15;
+            --font-color: #ffffff;
+            --font-size: 2rem;
+            --padding: 20px;
+            --button-color: #a44646;
+            --card-padding: 20px;
+            --title-color: #a44646;
+            --anchor-color: #ffffff;
+        }
+
+        .header {
+            background-color: var(--background);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .nav {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item {
+            padding: var(--padding);
+        }
+
+        .nav-link {
+            color: var(--anchor-color);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+
+        .button {
+            background-color: var(--button-color);
+            padding: 5px 20px;
+            color: white;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #a44646;
+            border-radius: 5px 7px;
+            font-color: #ffffff;
+        }
+
+        .container {
+            color: var(--font-color);
+            padding: var(--padding);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            background-color: #1b263b;
+            text-align: center;
+            padding: var(--card-padding);
+            flex: 30%;
+            border-radius: 5px 10px;
+            min-height: 300px;
+            box-sizing: border-box;
+            align-items: center;
+            /* padding: 5px 10px; */
+        }
+
+        .title {
+            font-size: var(--font-size);
+            text-align: center;
+            color: var(--background);
+            margin-bottom: 20px;
+            padding: 10px;
+            text-color:red;
+        }
+
+        .thumbnail {
+            width: 30%;
+            border-radius: 40%;
+            object-fit: cover;
+        }
+
+        .logo {
+            width: 100px;
+            border-radius: 40%;
+        }
+
+        .copyright-caption {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#"><img class="logo" src="chinaar.jpg.png" alt="Logo" /></a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                <li class="nav-item"><button class="btn">Call Now</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="title">Chinaar Gang</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="shubham.jpg" class="thumbnail" alt="Shubham" />
+                        <h2>Shubham</h2>
+                        <p>Raper !</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                    <div class="col">
+                        <img src="satyam.jpg" class="thumbnail" alt="Satyam" />
+                        <h2>Satyam</h2>
+                        <p>Nawada ka ladka !</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                    <div class="col">
+                        <img src="neeraj.png" class="thumbnail" alt="Neeraj" />
+                        <h2>Neeraj</h2>
+                        <p>Padosan ka aashiq !</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+             
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="raja.jpg" class="thumbnail" alt="Raja" />
+                        <h2>Raja</h2>
+                        <p>Shareef Ladka !</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                    <div class="col">
+                        <img src="topper.png" class="thumbnail" alt="Ankit" />
+                        <h2>Ankit</h2>
+                        <p>Topper with 100%</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                    <div class="col">
+                        <img src="jaydeep.jpg" class="thumbnail" alt="Neeraj" />
+                        <h2>jaydeep</h2>
+                        <p>Pinjore Ka gunda !</p>
+                        <br /><button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footr">
+        <h5 class="copyright-caption">© Copyright. All rights reserved.</h5>
+    </footer>
+</body>
+
+</html>
